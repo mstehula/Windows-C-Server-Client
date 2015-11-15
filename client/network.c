@@ -1,12 +1,13 @@
 #include <winsock.h>
 #include "network.h"
 
-int open_socket(int * socket_fd)
+int open_socket()
 // -
-// Opens the socket into the socket_fd
+// Func: Opens the socket into the socket_fd
+// Retn: The file descriptor that the socket is opened on
 // -
 {
-  return *socket_fd = socket(AF_INET6, SOCK_STREAM, IPPROTO_TCP);
+  return socket_fd = socket(AF_INET6, SOCK_STREAM, IPPROTO_TCP);
 }
 
 int send_message(int * socket_fd, struct message_buffer msg_buf)
