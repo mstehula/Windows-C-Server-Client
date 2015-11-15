@@ -14,5 +14,5 @@ $(EXECUTABLE): $(OBJECTS)
 	$(CC) $(CFLAGS) $< -o $@
 
 clean:
-	rm -r client
+	rm -r *.exe
 	rm -r *.o
