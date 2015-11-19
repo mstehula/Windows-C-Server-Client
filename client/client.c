@@ -16,7 +16,11 @@ int main(int argc, char * argv[])
   else
   // More than one arguments
   {
-
+    for(; argc > 0; argc--)
+    //Loop through all arguments
+    {
+      
+    }
   }
 
   return(0);
