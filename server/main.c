@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "server.h"
 
 int main(int argc, char * argv[])
 // -
@@ -7,7 +8,6 @@ int main(int argc, char * argv[])
 // Retn: Errors, if any. Else, will return a 0
 // -
 {
-
   if(argc == 1)
   // No arguments
   {
@@ -22,6 +22,10 @@ int main(int argc, char * argv[])
 
     }
   }
+
+  int server_id = start_server();
+
+  stop_server(server_id);
 
   return(0);
 }
